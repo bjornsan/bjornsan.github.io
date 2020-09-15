@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5cbcfa50-d57e-40e3-b456-eff895d0ea26" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arduino.html" beforeDir="false" afterPath="$PROJECT_DIR$/arduino.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avansert-elektronikk.html" beforeDir="false" afterPath="$PROJECT_DIR$/avansert-elektronikk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cnc-maskinering.html" beforeDir="false" afterPath="$PROJECT_DIR$/cnc-maskinering.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-for-fabrikasjon.html" beforeDir="false" afterPath="$PROJECT_DIR$/design-for-fabrikasjon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elektronikk-101.html" beforeDir="false" afterPath="$PROJECT_DIR$/elektronikk-101.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalProject.html" beforeDir="false" afterPath="$PROJECT_DIR$/finalProject.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laserkutting.html" beforeDir="false" afterPath="$PROJECT_DIR$/laserkutting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspberry.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspberry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-D-printing.html" beforeDir="false" afterPath="$PROJECT_DIR$/three-D-printing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vinylkutting.html" beforeDir="false" afterPath="$PROJECT_DIR$/vinylkutting.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +58,7 @@
       <workItem from="1597864979666" duration="84000" />
       <workItem from="1597865248046" duration="20000" />
       <workItem from="1597865485743" duration="445000" />
+      <workItem from="1600198844249" duration="1010000" />
     </task>
     <servers />
   </component>
