@@ -59,10 +59,17 @@
       <workItem from="1597865248046" duration="20000" />
       <workItem from="1597865485743" duration="445000" />
       <workItem from="1600198844249" duration="1010000" />
+      <workItem from="1600619981145" duration="347000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="493" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600620268644">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="493" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.804@0.23.1440.804" timestamp="1600620268644" />
   </component>
 </project>
