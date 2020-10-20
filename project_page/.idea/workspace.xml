@@ -4,6 +4,8 @@
     <list default="true" id="5cbcfa50-d57e-40e3-b456-eff895d0ea26" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design-for-fabrikasjon.html" beforeDir="false" afterPath="$PROJECT_DIR$/design-for-fabrikasjon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elektronikk-og-arduino.html" beforeDir="false" afterPath="$PROJECT_DIR$/elektronikk-og-arduino.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +69,7 @@
       <workItem from="1603212956573" duration="2252000" />
       <workItem from="1603215849312" duration="8000" />
       <workItem from="1603217134827" duration="1137000" />
+      <workItem from="1603218476557" duration="1185000" />
     </task>
     <servers />
   </component>
