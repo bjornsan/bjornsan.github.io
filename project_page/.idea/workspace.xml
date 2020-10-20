@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cbcfa50-d57e-40e3-b456-eff895d0ea26" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Projects/Arduino/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projects/Elektronikk 101/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projects/Elektronikk 101 og Arduino/roover.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arduino.html" beforeDir="false" afterPath="$PROJECT_DIR$/elektronikk-og-arduino.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-for-fabrikasjon.html" beforeDir="false" afterPath="$PROJECT_DIR$/design-for-fabrikasjon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elektronikk-101.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elektronikk-og-arduino.html" beforeDir="false" afterPath="$PROJECT_DIR$/elektronikk-og-arduino.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/roover.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -67,6 +64,8 @@
       <workItem from="1600619981145" duration="4264000" />
       <workItem from="1600640239594" duration="609000" />
       <workItem from="1600722574138" duration="2802000" />
+      <workItem from="1603152038110" duration="1297000" />
+      <workItem from="1603188498982" duration="7753000" />
     </task>
     <servers />
   </component>
@@ -74,10 +73,11 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600722603821">
+    <state x="448" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603209795148">
       <screen x="0" y="23" width="1440" height="801" />
     </state>
-    <state x="448" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.801@0.23.1440.801" timestamp="1600722603821" />
+    <state x="448" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.798@0.23.1440.798" timestamp="1603190267176" />
+    <state x="448" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.801@0.23.1440.801" timestamp="1603209795148" />
     <state x="493" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600620268644">
       <screen x="0" y="23" width="1440" height="804" />
     </state>

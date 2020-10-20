@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
     <title>Arduino</title>
 </head>
 <body>
@@ -54,66 +56,149 @@
     </div>
 </header>
 
-<nav class="navbar navbar-expand-md bg-secondary">
+<nav class="navbar navbar-expand-md bg-transparent">
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="main-navigation">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item bg-primary">
+                <a class="nav-link text-black-50" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#footer">About</a>
+            <li class="nav-item bg-primary">
+                <a class="nav-link text-black-50" href="#footer">About</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<main>
 
-<div class="row mt-5 justify-content-center">
+<main role="main" class="container">
+<div class="row">
+    <div class="col-md-8 blog-main">
+        <h3 class="pb-3 mb-4 font-italic border-bottom display-3 bg-info text-center">
+            Elektronikk 101 og Arduino
+        </h3>
 
-    <div class="col-lg-10 col-md-10 col-sm-12">
-        <div class="bg-info">
-        <h1 class="text-center display-1">Elektronikk 101 og Arduino</h1>
-            <div class="bg-dark">
-                <br class="display-2" />
+        <div class="blog-post">
+            <h2 class="blog-post-title">Mini Duster</h2>
+
+            <p>
+                Her har jeg lagd en enkel RC bil med Arduino UNO. Den har en klisterrull festet foran som ser til
+                at fanger opp støv mens den kjører. Her under er et bilde av bilen og en liste av brukt utstyr.
+            </p>
+            <hr>
+            <div class="row">
+            <div class="col-md-6">
+            <img src="images/mini_duster.jpg" class="img-fluid" style="max-height:600px"/>
+            <img src="images/mini_duster_joystick_controller.jpg" class="img-fluid" style="max-height:600px"/>
             </div>
-            <h3 class="text-center display-2">Arduino</h3>
+
+            <div class="col-md-6">
+
+                <ul class="list-group">
+                    <li class="list-group-item">2 x Arduino uno</li>
+                    <li class="list-group-item">1 x Sensor shield</li>
+                    <li class="list-group-item">1 x L298 dual H-bridge</li>
+                    <li class="list-group-item">2 x Gear Motor</li>
+                    <li class="list-group-item">1 x Servo</li>
+                    <li class="list-group-item">1 x Ultrasonic sensor</li>
+                    <li class="list-group-item">3 x 9V battery</li>
+                    <li class="list-group-item">3 x wheels</li>
+                    <li class="list-group-item">1 x joystick</li>
+                    <li class="list-group-item">1 x RF 433Mhz module </li>
+                </ul>
+            </div>
+
+
+             </div>
+
+            <hr>
+
+
+            <p style="clear:both">
+                Jeg har brukt en "standard" plastskive for montering av motorer hjul og utstyr. Det er brukt en
+                Arduino Uno med en sensor shield som gir enkel tilkobling av sensorer isteden for å bruke f.eks.
+                breadboards.
+            </p>
+            <p>
+                Motorene er kontrollerte ved hjelp av en L298 modul, som i prinsippet er et kretskort som har to stk
+                H-brygger for å kontrollere rettning på to motorer. Den har og en spenningsregulator. Den benytter tre
+                pin for hver motor. To pin bestemmer hvilken rettning strømmen tar gjenom H-bryggen, og i tillegg er det
+                en enable pin som bestemmer med hvilken hastighet motorene skal kjøres. Dette kan kontrolleres ved
+                hjelp av PVW fra Arduino kortet.
+            </p>
+
+            <p>
+                Jeg har brukt en RF modul av typen <a href="https://www.componentsinfo.com/fs1000a-433mhz-rf-transmitter-xy-mk-5v-receiver-module-explanation-pinout/">FS 1000A</a>
+                hvordan en RF transmitter/receiver virker
+            </p>
+            <P>
+                Har brukt en hobby servo som jeg satt fast en supersonic sensor på. Denne finner så ut avstanden til
+                objekten rundt omkring den og printer det til Serial monitor.
+            </P>
+            <p>
+                Har brukt en joystick for å kontrollere roboten, den er ansluten til det andre Arduino kortet sammen med
+                en RF transmitter modul. Som så sender over dataen som de to potentiometrene i joysticken generer. (x, y)
+                verdier. Siden RF modulen sender data via ASK og jeg bruker RadioHead sitt bibliotek til å håndtere dette
+                så må jeg først kovertere 10bits signalet fra Ardurino sin ADC til en 8bit verdi som jeg så kan sende over
+                til robotens sin RF receiver.
+            </p>
+
+            <hr>
+
+            <video width="640" height="360" autoplay controls>
+                <source src="videos/mini_duster.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <hr>
+
+        </div><!-- /.blog-post -->
+
+
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+        <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">About</h4>
+            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
         </div>
-        <p class="text-center">
-            Her har jeg lagd en selvkjørende rover som unnviker å kjøre inn i saker.
-        </p>
 
-        <p class="text-center">
-            Det som er brukt av utstyr er:
-        </p>
-    </div>
-
-        <div class="col-md-4">
-
-            <ul class="text-center list-group">
-                <li class="list-group-item">1 x Arduino uno</li>
-                <li class="list-group-item">1 x Sensor shield</li>
-                <li class="list-group-item">1 x Voltage Regulator</li>
-                <li class="list-group-item">2 x Gear Motor</li>
-                <li class="list-group-item">1 x Servo</li>
-                <li class="list-group-item">1 x Ultrasonic sensor</li>
-                <li class="list-group-item">2 x 9V battery</li>
-                <li class="list-group-item">3 x wheels</li>
-            </ul>
-
-            <br />
-            <br />
-
-            <img src="images/roover.jpg" class="img-fluid"/>
-
-            <br />
-            <br/>
+        <div class="p-3">
+            <h4 class="font-italic">Prosjekter</h4>
+            <ol class="list-unstyled mb-0">
+                <li><a href="design-for-fabrikasjon.html">Design for fabrikasjon</a></li>
+                <li><a href="raspberry.html">Raspberry Pi</a></li>
+                <li><a href="three-D-printing.html">3D printing</a></li>
+                <li><a href="vinylkutting.html">Vinylkutting</a></li>
+                <li><a href="avansert-elektronikk.html">Avansert elektronikk</a></li>
+                <li><a href="laserkutting.html">Laserkutting</a></li>
+                <li><a href="cnc-maskinering.html">CNC maskinering</a></li>
+                <li><a href="finalProject.html">Final project</a></li>
+            </ol>
         </div>
 
-</div>
+        <div class="p-3">
+            <h4 class="font-italic">Referenser</h4>
+            <ol class="list-unstyled">
+                <li><a href="https://www.airspayce.com/mikem/arduino/RadioHead/index.html">RadioHead</a></li>
+                <li><a href="https://dronebotworkshop.com/433mhz-rf-modules-arduino/">How to use RF 433MHz modules</a></li>
+                <li><a href="https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/">How to mechatronics</a></li>
+            </ol>
+        </div>
+
+        <div class="p-3">
+            <h4 class="font-italic">Github</h4>
+            <ol class="list-unstyled">
+                <li><a href="#">Mini Duster Code</a></li>
+            </ol>
+        </div>
+    </aside><!-- /.blog-sidebar -->
+
+</div><!-- /.row -->
+
 </main>
 
 <footer class="page-footer" id="footer">
