@@ -115,8 +115,10 @@
 
             <hr>
 
+            <h2 class="blog-post-title" style="clear:both">Beskrivelse av deler</h2>
 
-            <p style="clear:both">
+
+            <p>
                 Jeg har brukt en "standard" plastskive for montering av motorer hjul og utstyr. Det er brukt en
                 Arduino Uno med en sensor shield som gir enkel tilkobling av sensorer isteden for å bruke f.eks.
                 breadboards.
@@ -131,7 +133,17 @@
 
             <p>
                 Jeg har brukt en RF modul av typen <a href="https://www.componentsinfo.com/fs1000a-433mhz-rf-transmitter-xy-mk-5v-receiver-module-explanation-pinout/">FS 1000A</a>
-                hvordan en RF transmitter/receiver virker
+                 som er en RF modul som sender på frekvensen 433MHz hvilket er en lovlig frekvens å bruke for lav signalstyrke.
+                Akkurat denne modellen av RF modul har ikke veldig lang rekkvidde hvis man ikke lodder fast ekstra antenner.
+                For meg virker den på ca 1-2 meters avstand.
+            </p>
+
+            <p>
+                Transmitteren har 3 pins, VCC, GND og DATA. VCC for strøm inn, GND for ground og DATA for å sende data ut.
+            </p>
+            <p>
+                Receiveren har 4 pins, men 2 av dem er koblet sammen, vanlig di to i mitdten. Di to som er koblet sammen er
+                data pinsen, di andre to er da selvføgelig VCC og GND.
             </p>
             <P>
                 Har brukt en hobby servo som jeg satt fast en supersonic sensor på. Denne finner så ut avstanden til
@@ -139,12 +151,15 @@
             </P>
             <p>
                 Har brukt en joystick for å kontrollere roboten, den er ansluten til det andre Arduino kortet sammen med
-                en RF transmitter modul. Som så sender over dataen som de to potentiometrene i joysticken generer. (x, y)
-                verdier. Siden RF modulen sender data via ASK og jeg bruker RadioHead sitt bibliotek til å håndtere dette
-                så må jeg først kovertere 10bits signalet fra Ardurino sin ADC til en 8bit verdi som jeg så kan sende over
-                til robotens sin RF receiver.
+                en RF transmitter modul. En joystick er i utgangspunkt 2 potentiometere som da maler x-posisjon og y-posisjon,
+                samt i visse fall en push button på toppen.
+            </p>
+            <p>
+                Joysticken som jeg har brukt har 5 pins, VCC, GND, VRX, VRY og SW. VRX er da potentiometeren for x-verdiene,
+                VRY er potentiometerene for y-verdiene og SW er for push button på toppen i tilfelle man vil bruke den.
             </p>
 
+            <h2 class="blog-post-title">Video av testkjøring</h2>
             <hr>
 
             <video width="640" height="360" autoplay controls>
@@ -154,6 +169,35 @@
 
             <hr>
 
+            <h2 class="blog-post-title">Hvordan skal man bygge den?</h2>
+
+            <p>
+                masse schematics :)
+            </p>
+
+
+            <h2 class="blog-post-title">Kode forklart</h2>
+
+
+            <p>
+                Joystick:
+            </p>
+
+            <p>
+                RF Communication:
+            </p>
+
+            <p>
+                Motor control:
+            </p>
+
+            <p>
+                Servo control:
+            </p>
+
+            <p>
+                super sonic sensor:
+            </p>
         </div><!-- /.blog-post -->
 
 
@@ -161,10 +205,6 @@
     </div><!-- /.blog-main -->
 
     <aside class="col-md-4 blog-sidebar">
-        <div class="p-3 mb-3 bg-light rounded">
-            <h4 class="font-italic">About</h4>
-            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-        </div>
 
         <div class="p-3">
             <h4 class="font-italic">Prosjekter</h4>
