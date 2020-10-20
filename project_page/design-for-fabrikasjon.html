@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
     <title>Design for fabrikasjon</title>
 </head>
 <body>
@@ -38,22 +40,105 @@
 </header>
 
 
-<nav class="navbar navbar-expand-md bg-secondary">
+<nav class="navbar navbar-expand-md bg-transparent">
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="main-navigation">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item bg-primary">
+                <a class="nav-link text-black-50" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#footer">About</a>
+            <li class="nav-item bg-primary">
+                <a class="nav-link text-black-50" href="#footer">About</a>
             </li>
         </ul>
     </div>
 </nav>
 
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-3 mb-4 font-italic border-bottom display-3  bg-info text-center">
+                Design for fabrikasjon
+            </h3>
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Inkscape</h2>
+
+                <hr>
+
+                <p>
+                    Her har jeg lagd en veldig enkel liten ikon. Pacman lives forever!
+                </p>
+
+                <img src="images/thePacmans.svg" alt="picture made in inkscape, showing pacman" style="max-height: 600px" />
+
+            </div>
+
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Fusion 360</h2>
+
+                <p>
+                    En case til en Arduino uno. Som første prosjekt i Fusion 360 er jeg vel OK fornøyd.
+                </p>
+                <p>
+                    Følgte denne tutorialen:
+                    <a href="https://www.youtube.com/watch?v=E0bhdr84FNU" alt="Designing a 3D Printed Enclosure for Arduino Uno">Designing a 3D Printed Enclosure for Arduino Uno</a>
+                </p>
+
+                <iframe src="https://hiof54.autodesk360.com/shares/public/SH56a43QTfd62c1cd968c93ef2a9c5527617?mode=embed"
+                        width="640"
+                        height="480"
+                        allowfullscreen="true"
+                        webkitallowfullscreen="true"
+                        mozallowfullscreen="true"
+                        frameborder="0">
+
+                </iframe>
+
+            </div>
+        </div>
+
+        <aside class="col-md-4 blog-sidebar">
+
+            <div class="p-3">
+                <h4 class="font-italic">Prosjekter</h4>
+                <ol class="list-unstyled mb-0">
+                    <li><a href="elektronikk-og-arduino.html">Elktronikk og Arduino</a></li>
+                    <li><a href="raspberry.html">Raspberry Pi</a></li>
+                    <li><a href="three-D-printing.html">3D printing</a></li>
+                    <li><a href="vinylkutting.html">Vinylkutting</a></li>
+                    <li><a href="avansert-elektronikk.html">Avansert elektronikk</a></li>
+                    <li><a href="laserkutting.html">Laserkutting</a></li>
+                    <li><a href="cnc-maskinering.html">CNC maskinering</a></li>
+                    <li><a href="finalProject.html">Final project</a></li>
+                </ol>
+            </div>
+
+            <div class="p-3">
+                <h4 class="font-italic">Referenser</h4>
+                <ol class="list-unstyled">
+                    <li><a href="https://www.airspayce.com/mikem/arduino/RadioHead/index.html">RadioHead</a></li>
+                    <li><a href="https://dronebotworkshop.com/433mhz-rf-modules-arduino/">How to use RF 433MHz modules</a></li>
+                    <li><a href="https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/">How to mechatronics</a></li>
+                </ol>
+            </div>
+
+            <div class="p-3">
+                <h4 class="font-italic">Github</h4>
+                <ol class="list-unstyled">
+                    <li><a href="http://localhost:63342/project_page/elektronikk-og-arduino.html?_ijt=5pihjv8gdosmopnclabr18io9t">Main project repo</a></li>
+                    <li><a href="https://github.com/bjornsan/bjornsan.github.io/tree/master/Projects/Design%20for%20fabrikasjon">Design for fabrikasjon repo</a></li>
+                </ol>
+            </div>
+        </aside><!-- /.blog-sidebar -->
+    </div>
+</main>
+
+
+<!---
 <div class="container features">
     <div class="row justify-content-center">
         <div class="col-lg-10 col-md-10 col-sm-12">
@@ -98,7 +183,7 @@
 
 </div>
 
-
+-->
 
 
 <footer class="page-footer" id="footer">
